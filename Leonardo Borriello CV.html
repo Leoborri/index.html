@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leonardo Borriello | IT, Museo, Divulgazione</title>
+<style>
+:root{--forest:#123b2a;--forest2:#1f5b3d;--lime:#c9e66b;--plum:#6b435f;--paper:#fbfaf6;--ink:#1d211f;--muted:#657068;--line:#d8e0d8;--sage:#eaf2ea;--lilac:#f1e8ef;--white:#fff;--shadow:0 28px 70px rgba(18,59,42,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#edf3ed 0,#f8f6f1 45%,#eee7ed 100%);color:var(--ink);font-family:Inter,Segoe UI,Aptos,Arial,sans-serif;font-size:18px;line-height:1.52}
+a{color:inherit}.shell{max-width:1180px;margin:0 auto;padding:24px}.page{background:var(--paper);box-shadow:var(--shadow);border-radius:28px;overflow:hidden;margin:0 auto 30px}.hero{min-height:88vh;background:radial-gradient(circle at 80% 12%,rgba(201,230,107,.30),transparent 25%),linear-gradient(140deg,var(--forest),#0c2c20 70%);color:#fff;padding:64px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;position:relative}.eyebrow{font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);font-size:.82rem}.hero h1{font-size:clamp(4rem,8vw,7.3rem);line-height:.85;letter-spacing:-.065em;margin:.25em 0}.hero h1 span{display:block;color:var(--lime)}.hero .role{font-weight:800;font-size:clamp(1.45rem,2.6vw,2.1rem);max-width:860px}.hero .tagline{font-size:1.2rem;max-width:720px;color:#e8f1eb}.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.pill{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.08);font-size:.88rem}.hero-panel{display:grid;gap:16px}.signal{border-radius:20px;padding:22px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px)}.signal strong{display:block;color:var(--lime);font-size:2.4rem;line-height:1}.signal span{font-size:.93rem;color:#ecf3ee}.scroll{position:absolute;bottom:24px;left:64px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#bcd0c2}.section{padding:64px}.section-head{display:grid;grid-template-columns:.4fr 1.6fr;gap:28px;align-items:start;margin-bottom:36px}.section-num{font-size:5rem;font-weight:900;line-height:.8;color:var(--line)}h2{font-size:clamp(2.2rem,4vw,4.2rem);line-height:.95;letter-spacing:-.045em;margin:0;color:var(--forest)}.lead{font-size:1.2rem;color:var(--muted);max-width:820px}.triad{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:28px;border-radius:22px;border:1px solid var(--line);background:#fff}.card h3{font-size:1.25rem;margin:0 0 8px;color:var(--plum)}.card p{margin:0;color:var(--muted)}.card.key{background:var(--forest);color:#fff;border:0}.card.key h3{color:var(--lime)}.card.key p{color:#edf5ef}.feature{display:grid;grid-template-columns:.72fr 1.28fr;border-radius:28px;overflow:hidden;background:var(--lilac);border:1px solid #d8c9d5}.feature-title{background:var(--plum);color:#fff;padding:42px;display:flex;flex-direction:column;justify-content:center}.feature-title small{color:var(--lime);font-weight:800;letter-spacing:.16em}.feature-title h3{font-size:3.5rem;line-height:.85;margin:14px 0}.feature-body{padding:42px}.feature-body h4{font-size:1.65rem;margin:0 0 12px;color:var(--plum)}.clean{padding:0;margin:18px 0 0;list-style:none}.clean li{padding:10px 0 10px 28px;border-top:1px solid rgba(107,67,95,.14);position:relative}.clean li:before{content:'›';position:absolute;left:5px;color:var(--plum);font-weight:900}.timeline{display:grid;gap:16px}.job{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:24px 0;border-top:1px solid var(--line)}.date{font-weight:850;color:var(--plum)}.job h3{font-size:1.35rem;margin:0;color:var(--forest)}.job p{margin:.4em 0;color:var(--muted)}.tech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.tech{padding:24px;border-radius:20px;background:#fff;border:1px solid var(--line)}.tech h3{margin:0 0 10px;color:var(--forest)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{padding:7px 10px;border-radius:10px;background:var(--sage);color:var(--forest);font-weight:750;font-size:.82rem}.chip.plum{background:var(--lilac);color:var(--plum)}.quote{padding:48px;border-radius:26px;background:linear-gradient(135deg,var(--forest),var(--forest2));color:#fff;font-size:1.65rem;font-weight:750}.quote strong{color:var(--lime)}.footer{padding:42px 64px;background:#101d17;color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:var(--lime);font-size:1.25rem}.toolbar{position:fixed;right:18px;bottom:18px;display:flex;gap:8px;z-index:10}.btn{border:0;border-radius:999px;background:var(--forest);color:#fff;padding:12px 16px;font-weight:800;cursor:pointer;box-shadow:0 10px 25px rgba(18,59,42,.2)}.btn:hover{background:var(--plum)}.reveal{opacity:0;transform:translateY(18px);transition:.55s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){body{font-size:16px}.shell{padding:0}.page{border-radius:0}.hero{grid-template-columns:1fr;min-height:auto;padding:42px 28px}.hero h1{font-size:4.35rem}.scroll{display:none}.section{padding:48px 28px}.section-head{grid-template-columns:1fr}.section-num{font-size:3rem}.triad,.tech-grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:6px}.footer{padding:36px 28px;display:block}.toolbar{display:none}}
+@media print{@page{size:A4;margin:11mm}body{background:#fff;font-size:10pt}.shell{padding:0;max-width:none}.page{box-shadow:none;border-radius:0;margin:0}.hero{min-height:0;padding:13mm;background:var(--forest)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;break-after:page}.hero h1{font-size:48pt}.hero-panel{grid-template-columns:repeat(3,1fr)}.signal strong{font-size:20pt}.section{padding:10mm 8mm}.section-head{margin-bottom:7mm}.section-num{font-size:30pt}.triad,.tech-grid{gap:4mm}.card,.tech{padding:5mm}.feature{break-inside:avoid}.feature-title,.feature-body{padding:8mm}.feature-title h3{font-size:25pt}.job{grid-template-columns:38mm 1fr;padding:4mm 0}.quote{padding:8mm;font-size:15pt}.toolbar,.scroll{display:none}.reveal{opacity:1;transform:none}.section{break-inside:auto}.footer{padding:8mm}}
+</style>
+</head>
+<body>
+<div class="toolbar"><button class="btn" onclick="window.print()">Stampa / Salva PDF</button></div>
+<div class="shell">
+<main class="page">
+<section class="hero">
+<div>
+<div class="eyebrow">Curriculum Experience • 2026</div>
+<h1>Leonardo <span>Borriello</span></h1>
+<div class="role">Tecnico IT e multimediale tra ricerca, museo e divulgazione scientifica.</div>
+<p class="tagline">Risolvo problemi, costruisco esperienze interattive e faccio funzionare persone, tecnologia e ambienti insieme.</p>
+<div class="contact"><span class="pill">Frascati (RM)</span><span class="pill">+39 339 442 8847</span><span class="pill">leo.borri04@gmail.com</span><span class="pill">PEC: leonardo.borriello@pecprivato.it</span></div>
+</div>
+<div class="hero-panel">
+<div class="signal"><strong>RISOLVO</strong><span>Supporto IT, diagnosi, infrastruttura</span></div>
+<div class="signal"><strong>CREO</strong><span>Cosmic Rain, divulgazione interattiva</span></div>
+<div class="signal"><strong>COLLEGO</strong><span>Tecnologia, scienza e persone</span></div>
+</div>
+<div class="scroll">Scorri per il dettaglio ↓</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">01</div><div><h2>Quello che porto</h2><p class="lead">Un profilo tecnico, pratico e curioso. Se serve qualcosa per il buon funzionamento dell'ambiente, me ne occupo.</p></div></div>
+<div class="triad">
+<div class="card key"><h3>Centro Fermi</h3><p>Supporto IT, museo, infrastruttura, eventi e continuità operativa dal 1 marzo 2025.</p></div>
+<div class="card"><h3>Cosmic Rain</h3><p>Videogioco educativo sui raggi cosmici, portato al pubblico in due edizioni.</p></div>
+<div class="card"><h3>Psicologia</h3><p>Laurea L-24 in corso per costruire un futuro orientato al benessere delle persone.</p></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">02</div><div><h2>Il progetto che mi distingue</h2><p class="lead">Non una semplice esercitazione: un'esperienza progettata, aggiornata e utilizzata con il pubblico.</p></div></div>
+<div class="feature">
+<div class="feature-title"><small>NOTTE EUROPEA DEI RICERCATORI</small><h3>COSMIC<br>RAIN</h3><span>THE GAME</span></div>
+<div class="feature-body"><h4>Dalla fisica a un videogioco accessibile</h4><p>Ideazione e sviluppo di un videogioco web educativo sui raggi cosmici, presentato presso il CAE di Testaccio.</p><ul class="clean"><li>HTML5, CSS3, JavaScript e Canvas</li><li>Modalità locale per 1-4 giocatori</li><li>Timer, punteggio, classifica e storico</li><li>Aggiornamento tecnico e grafico per la seconda edizione</li></ul></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">03</div><div><h2>Esperienza principale</h2><p class="lead">Technical Enhancement Centro Fermi • Collaboratore tecnico - Borsista • Roma • 01/03/2025 - in corso</p></div></div>
+<div class="tech-grid">
+<div class="tech"><h3>Supporto IT e sistemi</h3><div class="chips"><span class="chip">Windows 10/11</span><span class="chip">Linux</span><span class="chip">macOS</span><span class="chip">iOS</span><span class="chip">Intel NUC</span><span class="chip">Mac mini</span></div><ul class="clean"><li>Configurazione, manutenzione, ricondizionamento e riassegnazione di workstation, PC desktop, mini PC Intel NUC, Mac mini e portatili Lenovo e MacBook.</li><li>Gestione di monitor LG, Dell, Philips e HP; stampanti Canon, HP e Kyocera; tastiere, mouse, webcam, dispositivi audio, unità di archiviazione e altre periferiche.</li><li>Account, applicazioni, driver, aggiornamenti, profili utente, condivisioni di rete e assistenza trasversale sui servizi Microsoft e Google.</li></ul></div>
+<div class="tech"><h3>Diagnostica hardware e software</h3><div class="chips"><span class="chip plum">BIOS/UEFI</span><span class="chip plum">SFC</span><span class="chip plum">DISM</span><span class="chip plum">FurMark</span><span class="chip plum">S.M.A.R.T.</span><span class="chip plum">Linux Live USB</span></div><ul class="clean"><li>Test e valutazione di SSD, HDD, RAM, CPU, GPU, alimentatori e componenti elettronici.</li><li>Ripristino dei sistemi e documentazione delle procedure.</li></ul></div>
+<div class="tech"><h3>Rete e infrastruttura</h3><div class="chips"><span class="chip">LAN/WLAN</span><span class="chip">TCP/IP</span><span class="chip">VLAN</span><span class="chip">Access point</span><span class="chip">Switch</span><span class="chip">Patch panel</span><span class="chip">Wake-on-LAN</span></div><ul class="clean"><li>Installazione e collegamento degli apparati, configurazione delle porte e integrazione nella rete.</li><li>Storage condiviso con workstation riconvertita, tre HDD da circa 8 TB e accessi protetti.</li></ul></div>
+<div class="tech"><h3>Inventario e documentazione</h3><div class="chips"><span class="chip plum">Asset</span><span class="chip plum">Seriali</span><span class="chip plum">Assegnazioni</span><span class="chip plum">Ticket Engie</span></div><ul class="clean"><li>Censimento di apparecchiature, collocazioni, assegnatari, trasferimenti e sostituzioni.</li><li>Procedure, schede di intervento, guide operative e coordinamento con tecnici e fornitori.</li></ul></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">04</div><div><h2>Museo e audiovisivi</h2><p class="lead">Tecnologia che deve funzionare ogni giorno, spesso davanti al pubblico.</p></div></div>
+<div class="tech-grid">
+<div class="tech"><h3>Proiezione e controllo</h3><div class="chips"><span class="chip">Panasonic</span><span class="chip">NEC</span><span class="chip">Epson</span><span class="chip">Canon</span></div><ul class="clean"><li>Manutenzione, configurazione e verifica dei proiettori: sorgenti, accensione, messa a fuoco, test immagine e corretta proiezione.</li><li>Software Panasonic per gestione centralizzata e controllo remoto dei dispositivi del museo.</li><li>Wake-on-LAN e configurazione BIOS per gli stati S4/S5.</li></ul></div>
+<div class="tech"><h3>Installazioni multimediali</h3><div class="chips"><span class="chip plum">BrightSign HD224</span><span class="chip plum">Touchscreen</span><span class="chip plum">Monitor professionali</span><span class="chip plum">Schede SD</span></div><ul class="clean"><li>Player BrightSign, contenuti multimediali, PC dedicati e controllo coordinato da remoto.</li><li>Ripristino della proiezione del Sole mediante sostituzione del player e preparazione della memoria.</li><li>Integrazione dei sistemi dedicati ai raggi cosmici.</li></ul></div>
+<div class="tech"><h3>Aule e regia</h3><div class="chips"><span class="chip">HDMI</span><span class="chip">DisplayPort</span><span class="chip">USB</span><span class="chip">Mixer</span><span class="chip">Webcam</span><span class="chip">Microfoni</span></div><ul class="clean"><li>Verifica di schermi, diffusori, webcam, microfoni, mixer e postazioni di regia delle Aule Fermi e Touschek.</li></ul></div>
+<div class="tech"><h3>Servizi Microsoft, Google ed eventi</h3><div class="chips"><span class="chip plum">Microsoft 365</span><span class="chip plum">Word</span><span class="chip plum">Excel</span><span class="chip plum">PowerPoint</span><span class="chip plum">Outlook</span><span class="chip plum">OneDrive</span><span class="chip plum">Teams</span><span class="chip plum">Google Workspace</span><span class="chip plum">Drive</span><span class="chip plum">Docs</span><span class="chip plum">Sheets</span><span class="chip plum">Meet</span><span class="chip plum">YouTube</span><span class="chip plum">Zoom</span></div><ul class="clean"><li>Utilizzo e assistenza sui principali servizi Microsoft e Google: produttività, posta, archiviazione cloud, condivisione documenti, collaborazione e videoconferenza.</li><li>Conferenze, riunioni ibride, condivisione schermo, audio, video, proiezione in sala e streaming.</li><li>Supporto a EEE, Notte Europea dei Ricercatori, Giornata Internazionale della Luce, open day e visite museali.</li></ul></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">05</div><div><h2>Percorso</h2><p class="lead">Esperienze diverse, unite dalla disponibilità a impegnarmi e imparare.</p></div></div>
+<div class="timeline">
+<div class="job"><div class="date">2025 - in corso</div><div><h3>Centro Fermi</h3><p>Collaboratore tecnico - Borsista. Supporto IT, museo, rete, audiovisivi, eventi e operatività.</p></div></div>
+<div class="job"><div class="date">2024</div><div><h3>Vendemmia</h3><p>Contatto con la natura, concretezza e valore della fatica condivisa.</p></div></div>
+<div class="job"><div class="date">2023</div><div><h3>Hotel Club Santa Sabina</h3><p>Servizio di sala e buffet: ritmo, attenzione al pubblico e disponibilità.</p></div></div>
+<div class="job"><div class="date">2022</div><div><h3>iRiparazioni</h3><p>Assistenza su telefoni e computer: manualità, pazienza e ricerca dei guasti.</p></div></div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="section-head"><div class="section-num">06</div><div><h2>Direzione</h2><p class="lead">La tecnica è il presente. Comprendere e aiutare le persone è la direzione che sto costruendo.</p></div></div>
+<div class="quote">Studio <strong>Scienze e Tecniche Psicologiche - L-24</strong> presso Universitas Mercatorum per approfondire cervello, comportamento, processi cognitivi e relazioni umane, con l'obiettivo di contribuire concretamente al benessere delle persone.</div>
+<div class="triad" style="margin-top:16px"><div class="card"><h3>Formazione</h3><p>Diploma in Informatica e Telecomunicazioni, ITT E. Fermi, 2024.</p></div><div class="card"><h3>Certificazioni</h3><p>Sicurezza 25/CREF-G/003 e 25/CREF/SPEC/020. Wall Street English IT989.</p></div><div class="card"><h3>Lingue e interessi</h3><p>Italiano madrelingua • Inglese B1 • Filosofia • Viaggiare • Capoeira • Yoga • Meditazione.</p></div></div>
+</section>
+
+<footer class="footer"><strong>Leonardo Borriello</strong><span>IT • Museo • Divulgazione • Persone</span></footer>
+</main>
+</div>
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+</script>
+</body>
+</html>
